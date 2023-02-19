@@ -84,15 +84,15 @@ body {
 .header__img {
     overflow-x: scroll;
 }
-.header__img::-webkit-scrollbar{
-    width: 15px;
+.header__imagebox::-webkit-scrollbar{
+    width: 20px;
+    height: 2px;
+    border-radius: 50%;
 }
-.header__img::-webkit-scrollbar-thumb{
-    background-color: red;
+.header__imagebox::-webkit-scrollbar-thumb{
+    background-color: #0062FF;
 }
-.header__img::-webkit-scrollbar-track{
-    background-color: blue;
-}
+
 
 
 .header__imagebox {
@@ -309,7 +309,8 @@ ads section */
     appearance: none;
     color: #222222;
     font-size: 14px;
-
+    border: none;
+    border-radius: 6px;
 }
 
 .review__form textarea:focus {
@@ -344,46 +345,84 @@ ads section */
     
 }
 
+.choices__placeholder{
+    opacity: 1;
+    
+}
+
+.choices__list--dropdown .choices__placeholder{
+    display: none;
+    
+}
+.is-open .choices__item--selectable{
+    color: #222222;
+}
+.is-focused .choices__list--single 
+ {
+    color: #222222;
+}
+
 .choices[data-type*=select-one]:after{
     content: '';
     height: 8px;
     width: 8px;
     border: 1px solid #686868;
     border-width: 0 0 1px 1px;
-   transform: rotate(135deg);
+    transform: rotate(314deg);
+    transition: all 0.2s linear;
+    margin-top: -6px;
 }
+
 .choices[data-type*=select-one].is-open:after{
     border-color: #686868;
     border: 1px solid #686868;
     border-width: 0 0 1px 1px;
     margin-top: -3px;
+    transform: rotate(135deg);
+    transition: all 0.2s linear;
+
 }
 .choices__list--single{
     padding: 7px 20px 4px 12px;
 }
+
 .choices__list--dropdown {
     height: 183px;
     float: left;
+    margin-top: 10px;
+    
 }
+
 
 
 .choices__list::-webkit-scrollbar{
     width: 7px;
-    height: 45px;
-   
+    height: 100%;
+    
 }
 
 .choices__list::-webkit-scrollbar-thumb{
     background-color: #0062FF;
-    
+   height: 25px;
+  
 }
 .choices__list::-webkit-scrollbar-track{
     background-color: transparent;
-    float: right;
+    
+    
 }
+.choices__list::-webkit-scrollba{
+    overflow-y: auto ;
+    transform:scaleX(-1)
+}
+
+
 .is-focused .choices__inner,
 .is-open .choices__inner{
     border-radius: 6px;
+}
+.choices__list--dropdown .choices__item--selectable{
+    padding-right: 10px;
 }
 
 /* post section */

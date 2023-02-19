@@ -8,6 +8,7 @@ const choices = new Choices(element, {
     allowHTML: true
 })
 
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
