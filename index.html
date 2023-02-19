@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>ibrush</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Путь JavaScript</h1>
+            <div class="header__content">
+                <div class="header__imagebox">
+                    <img class="header__img" src="./img/header.jpg" alt="books">
+                    <div class="header__datebox">
+                        <p class="header__datebox-number">12</p>
+                        <p class="header__datebox-arrow"></p>
+                        <p class="header__datebox-mounth">Апреля</p>
+                    </div>
+                </div>
+                <p class="header__descr">Можно выделить три основных направления для прогресса JavaScript </p>
+            </div>
+
+            <div class="line"></div>
+        </div>
+    </header>
+    <main>
+        <section class="server">
+            <div class="container">
+                <h2 class="title server__title">Серверный JavaScript</h2>
+                <div class="server__contentbox">
+                    <img src="./img/quots.png" alt="quots">
+                    <div class="server__citate">
+                        <p class="server__citate-text">Разработчики и клиенты часто неправильно понимают, что такое
+                            система. Они видят графический интерфейс и думают, что он и есть система. Они определяют
+                            систему в терминах графического интерфейса и считают, что должны сразу начать работу с
+                            графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.
+                        </p>
+                        <p class="server__citate-author">— Р. Мартин</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="ads">
+            <div class="container">
+                <p class="ads__text">Реклама на <a href="#">blabla.com</a></p>
+                <img class="ads__img" src="./img/library.jpg" alt="library">
+                <img class="ads__img-mobile" src="./img/library_mobile.jpg" alt="library">
+            </div>
+        </div>
+        <section class="conclusion">
+            <div class="container">
+                <h2 class="title conclusion__title">Заключение</h2>
+                <p class="conclusion__subtitle">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое
+                    устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет
+                    деструктивный символ. Ямб, несмотря на то, что все эти характерологические черты отсылают не к
+                    единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит
+                    палимпсест. Контрапункт приводит ритм.</p>
+            </div>
+        </section>
+        <section class="review">
+            <div class="container">
+                <div class="review__rating">
+                    <h3 class="review__title">Оцените статью</h3>
+                    <div class="review__rating-block">
+                        <input name="rating" value="5" id="rating_5" type="radio" />
+                        <label for="rating_5" class="label__rating"></label>
+
+                        <input name="rating" value="4" id="rating_4" type="radio" />
+                        <label for="rating_4" class="label__rating"></label>
+
+                        <input name="rating" value="3" id="rating_3" type="radio" />
+                        <label for="rating_3" class="label__rating"></label>
+
+                        <input name="rating" value="2" id="rating_2" type="radio" />
+                        <label for="rating_2" class="label__rating"></label>
+
+                        <input name="rating" value="1" id="rating_1" type="radio" />
+                        <label for="rating_1" class="label__rating"></label>
+                    </div>
+                </div>
+                <div class="review__comment">
+                    <h3 class="review__title">Добавить комментарий к книге</h3>
+                    <div class="review__form">
+                        <form action="#">
+                            <div class="review__form-container">
+                                <input class="review__input" type="text" id="input_name">
+                                <label class="review__input-label input_name" for="input_name">Name</label>
+                            </div>
+                            <div class="review__form-container">
+                                 <input class="review__input" type="email" id="input_email">
+                            <label class="review__input-label input_email" for="input_email">E-mail</label>
+                            </div>
+                           
+
+                            <select class="js-choice">
+                                <option> JavaScript ниндзя</option>
+                                <option> Pragmatic Guide to JavaScript</option>
+                                <option> Pro JavaScript Techniques</option>
+                                <option> Выразительный JavaScript</option>
+                                <option> JavaScript ниндзя</option>
+                                <option> JavaScript ниндзя</option>
+                                <option> Pragmatic Guide to JavaScript</option>
+                                <option> Pro JavaScript Techniques</option>
+                                <option> Выразительный JavaScript</option>
+                                <option> Pragmatic Guide to JavaScript</option>
+                                <option> Pro JavaScript Techniques</option>
+                                <option> Выразительный JavaScript</option>
+                            </select>
+                            <textarea class="review__textarea" placeholder="Ваш отзыв"></textarea>
+                            <button class="review__btn">отправить</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="post">
+            <div class="container">
+                <h2 class="title post__title">Похожие посты</h2>
+                <div class="post__content">
+                    <div class="post__contentbox">
+                        <img class="post__img" src="./img/react.jpg" alt="react">
+                        <p class="post__text">События жизненного цикла ReactJS</p>
+                    </div>
+                    <div class="post__contentbox">
+                        <img class="post__img" src="./img/grid.jpg" alt="react">
+                        <p class="post__text">CSS Grids. Полное руководство</p>
+                    </div>
+                    <div class="post__contentbox">
+                        <img class="post__img" src="./img/js.jpg" alt="react">
+                        <p class="post__text">Асинхронность в JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper">
+           
+                <div class="swiper-wrapper">
+          
+                  <div class="swiper-slide">
+                    <div class="swiper-slide post__contentbox">
+                        <img class="post__img" src="./img/react.jpg" alt="react">
+                        <p class="post__text">События жизненного цикла ReactJS</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="post__contentbox">
+                        <img class="post__img" src="./img/grid.jpg" alt="react">
+                        <p class="post__text">CSS Grids. Полное руководство</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="post__contentbox">
+                        <img class="post__img" src="./img/js.jpg" alt="react">
+                        <p class="post__text">Асинхронность в JavaScript</p>
+                    </div>
+                  </div>
+                  ...
+                </div>
+                
+                <div class="swiper-pagination"></div>
+              
+              </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
