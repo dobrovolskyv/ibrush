@@ -1,3 +1,5 @@
+@import url('./font.css');
+
 *,
 *::after,
 *::before {
@@ -9,6 +11,9 @@
 ul,
 li {
     list-style: none;
+}
+a, button {
+    cursor: pointer;
 }
 
 body {
@@ -25,7 +30,7 @@ body {
 
 
 .title {
-    font-family: 'Consolas';
+    font-family: 'consolas-regular', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -47,8 +52,7 @@ body {
 }
 
 .header__title {
-    font-family: 'Consolas';
-    font-style: normal;
+    font-family: 'consolas-regular', sans-serif;
     font-weight: 700;
     font-size: 48px;
     text-align: center;
@@ -131,10 +135,15 @@ border-left: 5px solid black;
 }
 
 .header__descr {
+    font-family: 'Arial';
+    font-style: italic;
     margin-top: 20px;
     font-size: 14px;
     line-height: 18px;
     color: #202326;
+}
+.header__span{
+    display: none;
 }
 
 /* server section*/
@@ -178,7 +187,9 @@ ads section */
     padding: 34px 0;
     background-color: #EDEDED;
 }
-
+.ads__text{
+    font-family: 'Helvetica';
+}
 .ads__img {
     margin-top: 17px;
     width: 100%;
@@ -195,9 +206,9 @@ ads section */
 }
 
 .conclusion__subtitle {
+    font-family: 'ArialMT';
     width: 100%;
     margin-top: 26px;
-    font-family: 'ArialMT';
     font-size: 16px;
     line-height: 24px;
     color: #202326;
@@ -208,7 +219,10 @@ ads section */
     background-color: #EDEDED;
     padding: 40px 0;
 }
-
+.review__title{
+    font-family: 'consolas-regular', sans-serif;
+    font-weight: 700;
+}
 .review__form form {
     width: 100%;
 
@@ -258,9 +272,14 @@ ads section */
 .review__form-container{
     height: 50px;
     position: relative;
+    font-family: 'consolas-regular', sans-serif;
+}
+.review__form-container{
+    font-family: 'ArialMT';
 }
 
 .review__input {
+    
     width: 226px;
     height: 50px;
     border-radius: 6px;
@@ -270,7 +289,7 @@ ads section */
     font-size: 14px;
     line-height: 15px;
     color: #222222;
-
+    
 }
 
 
@@ -301,6 +320,7 @@ ads section */
 }
 
 .review__textarea {
+    font-family: 'ArialMT';
     resize: none;
     width: 100%;
     height: 120px;
@@ -342,7 +362,7 @@ ads section */
     background: #fff;
     font-size: 14px;
     color: #777777;
-    
+    font-family: 'ArialMT';
 }
 
 .choices__placeholder{
@@ -382,13 +402,14 @@ ads section */
     transition: all 0.2s linear;
 
 }
+
+
 .choices__list--single{
     padding: 7px 20px 4px 12px;
 }
 
 .choices__list--dropdown {
     height: 183px;
-    float: left;
     margin-top: 10px;
     
 }
@@ -448,8 +469,7 @@ ads section */
 
     margin-top: 20px;
     max-width: 208px;
-    font-family: 'Consolas';
-    font-style: normal;
+    font-family: 'consolas-regular', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
@@ -458,7 +478,7 @@ ads section */
 }
 
 .swiper {
-    width: 280px;
+    width: 281px;
     height: 334px;
     display: none;
   }
@@ -504,12 +524,17 @@ ads section */
     .container {
         max-width: 360px;
     }
-
     .title {
+        
         font-size: 23px;
         line-height: 36px;
     }
-
+    .header{
+        margin-top: 40px;
+    }
+    .header__span{
+        display: inline-block;
+    }
     .header .container {
         border-bottom: none;
     }

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'ArialMT';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/arialmt.woff'), format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/SegoeUI.woff'), format('woff');
+}
